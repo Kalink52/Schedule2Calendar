@@ -33,7 +33,12 @@ export const getDate = async (calenderString) => {
   let monthInt = await getMonthInt(calenderString[1]);
   let dayInt = await getDayInt(calenderString[1]); //! fix exceptions??
   let yearInt = await getYearInt(calenderString[2]); //! fix undefined
-  return `${monthInt}/${dayInt}/${yearInt}`;
+  // return `${monthInt}/${dayInt}/${yearInt}`; //* MM/DD/YYYY
+  let date = new Date(`${yearInt}-${monthInt}-${Number(dayInt)}`);
+  if (date) {
+    // console.log(date);
+    return date;
+  }
 };
 
 // module.exports = { getMonthInt, getDayInt, getYearInt, getDate };

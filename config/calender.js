@@ -1,6 +1,6 @@
+import { ICalendar } from 'datebook'
 
-
-const options = {
+export const options = {
     title: 'Happy Hour',
     location: 'The Bar, New York, NY',
     description: 'Let\'s blow off some steam with a tall cold one!',
@@ -12,7 +12,6 @@ const options = {
     }
   }
 
-module.exports= options
 
 
 
