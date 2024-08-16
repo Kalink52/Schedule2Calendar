@@ -1,4 +1,4 @@
-const calender = `Thursday, August 15, 2024 Full Day Professional Development Day for Staff
+export const calender = `Thursday, August 15, 2024 Full Day Professional Development Day for Staff
 Friday, August 16, 2024 Full Day Professional Development Day for Staff
 Monday, August 19, 2024 First Day of School for Y5, K - 12 th Grade Students – HALF DAY
 Friday, August 23, 2024 Early Release – For All Students – Y5, K-12 th Grade - Teacher PD (PM)
@@ -39,7 +39,7 @@ Wednesday, May 28, 2025 Half-Day for Y5, K – 12 th Grade, (7 th – 12 th Grad
 Thursday, May 29, 2025 Half-Day for Y5, K – 12 th Grade, (7 th – 12 th Grade Exams) PM Teacher Records Day
 Friday, May 30, 2025 Last Day of School for Y5, K-12 th Grade – HALF DAY`;
 
-const days = [
+export const days = [
   "Monday",
   "Tuesday",
   "Wednesday",
@@ -49,7 +49,7 @@ const days = [
   "Sunday",
 ];
 
-const months = [
+export const months = [
   "Jan",
   "Feb",
   "Mar",
@@ -63,4 +63,3 @@ const months = [
   "Nov",
   "Dec",
 ];
-module.exports = { calender, days, months };

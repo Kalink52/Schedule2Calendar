@@ -1,4 +1,5 @@
-const { months } = require("../data/data");
+// export { months } = require("../data/data");
+import { months } from "../data/data.js";
 
 const getMonthInt = (test) => {
   for (let index = 0; index < months.length; index++) {
@@ -28,11 +29,11 @@ const getYearInt = (test) => {
   }
 };
 
-const getDate = async (calenderString) => {
+export const getDate = async (calenderString) => {
   let monthInt = await getMonthInt(calenderString[1]);
   let dayInt = await getDayInt(calenderString[1]); //! fix exceptions??
   let yearInt = await getYearInt(calenderString[2]); //! fix undefined
   return `${monthInt}/${dayInt}/${yearInt}`;
 };
 
-module.exports = { getMonthInt, getDayInt, getYearInt, getDate };
+// module.exports = { getMonthInt, getDayInt, getYearInt, getDate };
